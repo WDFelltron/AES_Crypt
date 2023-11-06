@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Margin="20">
+            <TextBlock Text="Plain Text:"/>
+            <TextBox x:Name="txtPlainText" Margin="0 5"/>
+            <Button Content="Encrypt" Click="Encrypt_Click" Margin="0 10"/>
+            <TextBlock Text="Encrypted Text:"/>
+            <TextBox x:Name="txtEncryptedText" Margin="0 5"/>
+            <Button Content="Decrypt" Click="Decrypt_Click" Margin="0 10"/>
+            <TextBlock Text="Decrypted Text:"/>
+            <TextBox x:Name="txtDecryptedText" Margin="0 5"/>
+        </StackPanel>
     </Grid>
 </Window>
